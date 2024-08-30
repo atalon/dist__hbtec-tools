@@ -1,0 +1,28 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "hbtec-tools"
+version = "0.1.0"
+description = ""
+authors = [
+    "Antonio Talón <antonio.talon@gmail.com>",
+]
+maintainers = [
+    "Antonio Talón <antonio.talon@gmail.com>",
+]
+keywords = [ ]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+packages = [
+    { include = "es/hbtec/tools", from = "src" },
+    { include = "pyarmor_runtime_000000", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytimeparse = "^1.1.8"
+chardet = "^5.2.0"
